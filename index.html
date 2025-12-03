@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Online Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+    }
+    .product-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .product {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 220px;
+      margin: 15px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 180px;
+      height: 180px;
+      border-radius: 5px;
+    }
+    .product h3 {
+      margin: 10px 0;
+    }
+    .product p {
+      color: #27ae60;
+      font-weight: bold;
+    }
+    button {
+      background-color: #e67e22;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d35400;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ShopEase</h1>
+    <p>Your one-stop online store</p>
+  </header>
+
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <!-- Products Section -->
+    <section id="products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="C:\Users\azaan\Desktop\College Acad\Web Dev\Experiments\ecom store\shoes.jpeg" alt="Shoes">
+          <h3>Running Shoes</h3>
+          <p>$50</p>
+          <button onclick="addToCart('Running Shoes')">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="C:\Users\azaan\Desktop\College Acad\Web Dev\Experiments\ecom store\headphones.jpeg" alt="Headphones">
+          <h3>Wireless Headphones</h3>
+          <p>$80</p>
+          <button onclick="addToCart('Wireless Headphones')">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="C:\Users\azaan\Desktop\College Acad\Web Dev\Experiments\ecom store\SEEKER_DEEP_BLUE_04_4.5_300x.webp" alt="Smartwatch">
+          <h3>Smartwatch</h3>
+          <p>$120</p>
+          <button onclick="addToCart('Smartwatch')">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: support@shopease.com</p>
+      <p>Phone: +91 987XXXXXX</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function addToCart(item) {
+      alert(item + " has been added to your cart!");
+    }
+  </script>
+</body>
+</html>
